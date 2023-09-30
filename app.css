@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: "Overpass", sans-serif;
+	background-color: hsl(216, 12%, 8%);
+}
+
+.rating {
+	border: 1px solid;
+	border-radius: 1.3em;
+	width: 20em;
+	height: 22em;
+	display: flex;
+	flex-direction: column;
+	padding: 1.35em;
+	background-color: hsl(213, 19%, 18%);
+	justify-content: space-around;
+}
+
+.thank-you-message {
+	border: 1px solid;
+	border-radius: 1.3em;
+	width: 20em;
+	height: 22em;
+	display: flex;
+	flex-direction: column;
+	padding: 1.35em;
+	background-color: hsl(213, 19%, 18%);
+}
+
+.star-icon {
+	width: 2.45em;
+	height: auto;
+	margin-bottom: 0.3em;
+	border-radius: 50%;
+	padding: 0.8em;
+	background-color: hsla(217, 12%, 63%, 0.1);
+}
+
+.rating-title,
+.thank-you-title {
+	color: hsl(0, 0%, 100%);
+}
+
+.thank-you-title {
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.rating-description {
+	line-height: 1.5em;
+}
+
+.rating-description,
+.thank-you-description {
+	margin-bottom: 1em;
+	color: hsl(217, 12%, 63%);
+	font-size: 0.85em;
+}
+
+.thank-you-description {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.rating-options {
+	display: flex;
+	justify-content: space-around;
+	/* margin-bottom: 1em; */
+}
+
+.thank-you-image {
+	display: block;
+	height: auto;
+	margin: auto;
+}
+
+.rating-option {
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	background-color: hsla(217, 12%, 63%, 0.1);
+	color: hsl(217, 12%, 63%);
+	width: 3em;
+	height: 3em;
+	margin-bottom: 1em;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rating-option:hover {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(25, 97%, 53%);
+}
+
+.rating-option:focus {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(217, 12%, 63%);
+}
+
+.submit-button {
+	cursor: pointer;
+	border: none;
+	border-radius: 2em;
+	padding: 1em;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(25, 97%, 53%);
+	font-weight: 700;
+	letter-spacing: 2px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(0, 0%, 100%);
+}
+
+.hidden {
+	display: none;
+}
+
+.selected-rating {
+	text-align: center;
+	color: hsla(25, 97%, 53%, 0.9);
+	border-radius: 2em;
+	margin: auto;
+	padding: 0.25em 0.7em;
+	background-color: hsla(217, 12%, 63%, 0.1);
+	margin-top: 1.3em;
+	margin-bottom: 1em;
+}
